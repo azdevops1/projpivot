@@ -53,7 +53,7 @@ const signUpText = {
 const btnCtaStyle = {
   margin: "0 0 0 40px",
   display: "inline-block",
-  backgroundColor: "#ecb807",
+  backgroundColor: "#86beda",
 };
 
 const signUpButtonStyle = {
@@ -62,7 +62,7 @@ const signUpButtonStyle = {
 };
 
 const myBtn = {
-  backgroundColor: "#ecb807",
+  backgroundColor: "#86beda",
   fontFamily: "Comfortaa",
   textTransform: "uppercase",
   fontSize: "2rem",
