@@ -19,7 +19,7 @@ const globalFont = {
 };
 
 const signUpSection = {
-  backgroundColor: "#86BEDA",
+  backgroundColor: "#ecb807",
   margin: "0 -26.8% 0 -26.8%",
   width: "100%",
 };
