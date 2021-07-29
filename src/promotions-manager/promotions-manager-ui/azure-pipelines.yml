@@ -38,7 +38,7 @@ jobs:
     inputs:
       testResultsFormat: 'JUnit'
       testResultsFiles: 'test/junit.xml' 
-      searchFolder: '$(Build.SourcesDirectory)/src'
+      searchFolder: '$(Build.SourcesDirectory)/src/promotions-manager/promotions-manager-ui'
       mergeTestResults: true
       #testRunTitle: # Optional
       #buildPlatform: # Optional
