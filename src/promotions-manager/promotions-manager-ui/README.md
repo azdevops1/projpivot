@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/QualiLabs/Promotions%20Manager/_apis/build/status/promotions-manager-ui?branchName=master)](https://dev.azure.com/QualiLabs/Promotions%20Manager/_build/latest?definitionId=1?branchName=master)
+[![Build Status](https://dev.azure.com/azdevops10142/Promotions/_apis/build/status/Promotions?branchName=master)](https://dev.azure.com/azdevops10142/Promotions/_build/latest?definitionId=2&branchName=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
