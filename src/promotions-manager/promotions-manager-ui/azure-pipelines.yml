@@ -29,8 +29,8 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        Get-Childitem $(Build.SourcesDirectory)
-        Get-Childitem $(System.DefaultWorkingDirectory)
+        Get-Childitem -Path $(Pipeline.Workspace) -Include *junit*
+        Get-Childitem -Path $(System.DefaultWorkingDirectory) -Include *junit*
 
   # Publish unit tests
   - task: PublishTestResults@2
