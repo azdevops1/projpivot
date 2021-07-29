@@ -7,6 +7,17 @@ jobs:
     vmImage: 'Ubuntu 16.04'
 
   steps:
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        Get-Childitem $(Pipeline.Workspace)
+        Get-Childitem $(Agent.RootDirectory)
+        Get-Childitem $(Agent.BuildDirectory)
+        Get-Childitem $(Build.Repository.LocalPath)
+        Get-Childitem $(Build.SourcesDirectory)
+        Get-Childitem $(Build.StagingDirectory)
+
   # Install dependencies
   - script: npm install
     workingDirectory: promotionsmgr/src/promotions-manager/promotions-manager-ui
