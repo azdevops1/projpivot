@@ -11,12 +11,9 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        Get-Childitem $(Pipeline.Workspace)
-        Get-Childitem $(Agent.RootDirectory)
-        Get-Childitem $(Agent.BuildDirectory)
-        Get-Childitem $(Build.Repository.LocalPath)
-        Get-Childitem $(Build.SourcesDirectory)
-        Get-Childitem $(Build.StagingDirectory)
+        Get-Childitem $(Build.Repository.LocalPath) | Write-Host "Local" -ForegroundColor Blue
+        Get-Childitem $(Build.SourcesDirectory) | Write-Host "Source" -ForegroundColor Red
+        Get-Childitem $(Build.StagingDirectory) | Write-Host "Stage" -ForegroundColor Green
 
   # Install dependencies
   - script: npm install
