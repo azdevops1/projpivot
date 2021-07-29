@@ -27,6 +27,7 @@ jobs:
     displayName: 'Run unit tests'
       
   - script: export REACT_APP_BUILD_NUMBER=$(Build.BuildNumber) && npm run build
+    workingDirectory: $(Build.SourcesDirectory)/src/promotions-manager/promotions-manager-ui
     displayName: 'Build react app'
 
   # Publish unit tests
