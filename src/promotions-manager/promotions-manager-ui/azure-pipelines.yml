@@ -7,11 +7,6 @@ jobs:
     vmImage: 'Ubuntu 16.04'
 
   steps:
-  - task: PowerShell@2
-    inputs:
-      targetType: 'inline'
-      script: Get-Childitem $(Build.SourcesDirectory)
-
 
   # Install dependencies
   - script: npm install
@@ -29,6 +24,13 @@ jobs:
   - script: export REACT_APP_BUILD_NUMBER=$(Build.BuildNumber) && npm run build
     workingDirectory: $(Build.SourcesDirectory)/src/promotions-manager/promotions-manager-ui
     displayName: 'Build react app'
+
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        Get-Childitem $(Build.SourcesDirectory)
+        Get-Childitem $(System.DefaultWorkingDirectory)
 
   # Publish unit tests
   - task: PublishTestResults@2
