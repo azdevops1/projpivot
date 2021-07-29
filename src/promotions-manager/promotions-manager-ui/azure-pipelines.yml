@@ -30,7 +30,7 @@ jobs:
       targetType: 'inline'
       script: |
         Get-Childitem -Path $(Pipeline.Workspace) -Include *junit*
-        Get-Childitem -Path $(System.DefaultWorkingDirectory) -Include *junit*
+        Get-Childitem -Path $(System.DefaultWorkingDirectory) -Recurse
 
   # Publish unit tests
   - task: PublishTestResults@2
@@ -38,7 +38,7 @@ jobs:
     inputs:
       testResultsFormat: 'JUnit'
       testResultsFiles: 'test/junit.xml' 
-      searchFolder: '$(System.DefaultWorkingDirectory)'
+      searchFolder: '$(Build.SourcesDirectory)/src'
       mergeTestResults: true
       #testRunTitle: # Optional
       #buildPlatform: # Optional
