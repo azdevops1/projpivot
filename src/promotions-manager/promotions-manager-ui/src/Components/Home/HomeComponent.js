@@ -199,7 +199,7 @@ const Home = () => (
         <Grid style={signUpDiv}>
           <Row>
             <Col style={signUpSectionCol}>
-              <h2 style={signUpHeader}>Sign up for a FREE trial</h2>
+              <h1 style={signUpHeader}>Sign up for a FREE trial</h1>
               <p style={signUpText}>
                 The Promotions Manager is launching soon. Leave your email at
                 the bottom to get a FREE 60 days trial when we launch
