@@ -25,13 +25,6 @@ jobs:
     workingDirectory: $(Build.SourcesDirectory)/src/promotions-manager/promotions-manager-ui
     displayName: 'Build react app'
 
-  - task: PowerShell@2
-    inputs:
-      targetType: 'inline'
-      script: |
-        Get-Childitem -Path $(Pipeline.Workspace) -Include *junit*
-        Get-Childitem -Path $(System.DefaultWorkingDirectory) -Recurse
-
   # Publish unit tests
   - task: PublishTestResults@2
     continueOnError: true
@@ -79,7 +72,14 @@ jobs:
      logRequest: true
      logResponse: true
 
-
+  - task: StartSandbox@0
+    inputs:
+      colonyEndpoint: 'Colony'
+      timeout: '20'
+      space: 'AlexI'
+      blueprint: 'promotions-manager-all-aws'
+      sandbox: 'ADOPipelineReact'
+      
 # Publish build artifact to colony artifacts repo
 # - job: UploadArtifactToColonyRepo
 #   pool:
