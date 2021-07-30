@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Form, FormControl, Grid, Row, Col} from 'react-bootstrap';
 
 const signUpSection = {
-    backgroundColor: '#2225c5',
+    backgroundColor: '#951703',
     margin: '0 -26.8% 0 -26.8%',
 }
 const signUpDiv = {
@@ -109,7 +109,7 @@ const Home = () => (
             <Grid style={signUpDiv}>
                 <Row>
                     <Col md={10} mdOffset={2}>
-                        <h1 style={signUpHeader}>Sign up for a FREE trial</h1>
+                        <h2 style={signUpHeader}>Sign up for a FREE trial</h2>
                         <p>
                             The Promotions Manager is launching soon. Leave your email at the bottom to get a free 60 days trial whwn we launch.
                         </p>
