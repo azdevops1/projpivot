@@ -72,7 +72,7 @@ jobs:
     inputs:
      awsCredentials: 'AWS-S3-Connection'
      regionName: 'eu-west-1'
-     bucketName: 'colony-a8ea1902-eda7-4d3d-a545-78a6dca00a44'
+     bucketName: 'artifact-repo-promotionapp-alex'
      sourceFolder: '$(Build.ArtifactStagingDirectory)/'
      globExpressions: '*master.tar.gz'
      targetFolder: 'artifacts/latest'
