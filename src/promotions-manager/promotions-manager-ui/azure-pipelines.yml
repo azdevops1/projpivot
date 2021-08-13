@@ -77,7 +77,7 @@ jobs:
     inputs:
       colonyEndpoint: 'Colony'
       timeout: '20'
-      space: 'AlexI'
+      space: 'Dev'
       blueprint: 'promotions-manager-all-aws'
       sandbox: 'ADOPipelineReact'
 #      artifacts: 'promotions-manager-ui=artifacts/latest/promotions-manager-ui.master.tar.gz, promotions-manager-api=artifacts/latest/promotions-manager-api.master.tar.gz, mongodb=artifacts/test-data/test-data-db.tar'
