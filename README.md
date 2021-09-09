@@ -1,2 +1,2 @@
-# AWS workshop
-This repository contains all the files you will need to complete Module 1-4.
+# AWS Deployment
+This repository contains all the files you will need to deploy a sandbox environment into AWS.
