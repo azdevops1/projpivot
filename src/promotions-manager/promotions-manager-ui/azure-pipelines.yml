@@ -77,8 +77,8 @@ jobs:
     inputs:
       colonyEndpoint: 'Torque'
       timeout: '20'
-      space: 'Project-Novus'
-      blueprint: 'promotions-manager-all-aws'
+      space: 'Project-Pivot'
+      blueprint: 'proj-pivot-all-aws'
       sandbox: 'ADOPipelineReact'
 #      artifacts: 'promotions-manager-ui=artifacts/latest/promotions-manager-ui.master.tar.gz, promotions-manager-api=artifacts/latest/promotions-manager-api.master.tar.gz, mongodb=artifacts/test-data/test-data-db.tar'
       Inputs: 'PORT=3000, API_PORT=3001, AWS_INSTANCE_TYPE=m5.large, RELEASE_NUMBER=none, API_BUILD_NUMBER=none'
