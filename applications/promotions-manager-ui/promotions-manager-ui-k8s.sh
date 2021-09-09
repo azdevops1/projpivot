@@ -16,7 +16,9 @@ echo '==> Extract ui artifact to /var/www/promotions-manager/'
 mkdir $ARTIFACTS_PATH/drop
 tar -xvf $ARTIFACTS_PATH/promotions-manager-ui.*.tar.gz -C $ARTIFACTS_PATH/drop/
 mkdir /var/www/promotions-manager/
-tar -xvf $ARTIFACTS_PATH/drop/drop/promotions-manager-ui.*.tar.gz -C /var/www/promotions-manager/
+cp -R $ARTIFACTS_PATH/drop/build/* /var/www/promotions-manager/ 
+# tar -xvf $ARTIFACTS_PATH/drop/drop/promotions-manager-ui.*.tar.gz -C /var/www/promotions-manager/
+
 
 echo '==> Configure nginx'
 cd /etc/nginx/sites-available/
@@ -30,7 +32,7 @@ server {
 	server_name _;
 	index index.html index.htm;
 	location /api {		
-		proxy_pass http://promotions-manager-api.$DOMAIN_NAME:$API_PORT/api;
+		proxy_pass http://$API_DNS:$API_PORT/api;
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade \$http_upgrade;
 		proxy_set_header Connection 'upgrade';
