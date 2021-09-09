@@ -1,5 +1,4 @@
-[![Build Status](https://dev.azure.com/azdevops10142/Promotions/_apis/build/status/Promotions?branchName=master)](https://dev.azure.com/azdevops10142/Promotions/_build/latest?definitionId=2&branchName=master)
-
+[![Build Status](https://dev.azure.com/azdevops10142/Promotions/_apis/build/status/azdevops1.promotionsmgr?repoName=azdevops1%2Fprojpivot&branchName=master)](https://dev.azure.com/azdevops10142/Promotions/_build/latest?definitionId=3&repoName=azdevops1%2Fprojpivot&branchName=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
