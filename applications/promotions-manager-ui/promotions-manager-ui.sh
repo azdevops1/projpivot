@@ -18,11 +18,10 @@ mkdir $ARTIFACTS_PATH/drop
 tar -xvf $ARTIFACTS_PATH/promotions-manager-ui.*.tar.gz -C $ARTIFACTS_PATH/drop/
 mkdir /var/www/promotions-manager/
 # cp -R $ARTIFACTS_PATH/drop/build/* /var/www/promotions-manager/ 
-if [[ $ARTIFACTS_PATH == */drop/drop/* ]]; then 
-	tar -xvf $ARTIFACTS_PATH/drop/drop/promotions-manager-ui.*.tar.gz -C /var/www/promotions-manager/
-else
-	cp -R $ARTIFACTS_PATH/drop/build/* /var/www/promotions-manager/ 
-fi
+$ARTIFACTS_PATH == */drop/drop/*
+tar -xvf $ARTIFACTS_PATH/drop/drop/promotions-manager-ui.*.tar.gz -C /var/www/promotions-manager/
+cp -R $ARTIFACTS_PATH/drop/build/* /var/www/promotions-manager/ 
+
 
 echo '==> Configure nginx'
 cd /etc/nginx/sites-available/
