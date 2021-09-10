@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Form, FormControl, Grid, Row, Col} from 'react-bootstrap';
 
 const signUpSection = {
-    backgroundColor: '#5a3b3b',
+    backgroundColor: '#E5E5E5',
     margin: '0 -26.8% 0 -26.8%',
 }
 const signUpDiv = {
