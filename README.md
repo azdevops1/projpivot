@@ -1,2 +1,2 @@
 # AWS Deployment
-This repository contains all the files you will need to deploy a sandbox environment into AWS.
+This repository contains all the files you will need to deploy Project Pivot sandbox environment into AWS.
